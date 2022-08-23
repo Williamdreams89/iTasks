@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation } from 'swiper';
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -89,8 +89,17 @@ function HomePage() {
         className= "my__swiper"
       >
         <SwiperSlide>
-        <img src="../images/img1.jpg" alt="img1" />
+        <img src="../images/img4.jpg" alt="img1" />
 
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="../images/img5.jpg" alt="img2" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="../images/img6.jpg" alt="img2" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="../images/img1.jpg" alt="img2" />
         </SwiperSlide>
         <SwiperSlide>
         <img src="../images/img2.jpg" alt="img2" />

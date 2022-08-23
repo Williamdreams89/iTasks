@@ -49,6 +49,13 @@ export const APISlice = createApi({
         method: "POST",
         body : {username, password}
       })
+    }),
+    createUser: builder.mutation({
+      query: ({username, email, password})=>({
+        url: "/accounts/api/auth/register", 
+        method: "POST",
+        body:{username, email, password}
+      })
     })
   }),
 });
@@ -59,5 +66,6 @@ export const {
   useDeleteTodoMutation,
   useTodoDetailQuery,
   useEditTodoStatusMutation,
-  useLoginUserMutation
+  useLoginUserMutation, 
+  useCreateUserMutation,
 } = APISlice;

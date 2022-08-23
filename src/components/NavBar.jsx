@@ -8,6 +8,8 @@ const NaviBar = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 0;
+    margin-bottom: .1rem;
 
     a{
         color: white;
@@ -23,9 +25,9 @@ const NaviBar = styled.nav`
 
 `;
 
-const NavBar = () => {
+const NavBar = ({authMode}) => {
   return (
-    <NaviBar className='bg-dark text-light'>
+    <NaviBar className='bg-dark text-light' authMode= {authMode}>
         <h5><Link to="/">Taskmate</Link></h5>
         <ul>
             <li><Link to="/">Home</Link></li>

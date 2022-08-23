@@ -5,14 +5,16 @@ import { ApiProvider } from "@reduxjs/toolkit/query/react";
 import { APISlice } from "./Servcices/ApiSLice";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <ApiProvider api={APISlice}>
-        <App />
-      </ApiProvider>
-    </Router>
+    <ToastContainer />
+      <Router>
+        <ApiProvider api={APISlice}>
+          <App />
+        </ApiProvider>
+      </Router>
   </React.StrictMode>
 );
